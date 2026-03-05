@@ -131,20 +131,20 @@ body{
 
 //GRAFICI ADD
 .addLayout{
-  display:flex;
+  display:grid;
+  grid-template-columns: 65% 35%;
   gap:30px;
-  align-items:flex-start;
+  align-items:start;
 }
 
 .tableBox{
-  flex: 0 0 65%;
+  width:100%;
 }
 
 .chartBox{
-  flex: 1;
-  min-width: 320px;
+  width:100%;
   background:#3a3a3a;
-  padding:16px;
+  padding:15px;
   border-radius:8px;
 }
 
@@ -152,6 +152,7 @@ body{
   width:100% !important;
   height:380px !important;
 }
+
 
 
 
