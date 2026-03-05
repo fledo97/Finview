@@ -166,6 +166,24 @@ body{
   height:360px !important;
 }
 
+.addLayout{
+  display:grid;
+  grid-template-columns: 70% 30%;
+  gap:30px;
+}
+
+.tableBox{
+  width:100%;
+}
+
+.chartBox{
+  width:100%;
+}
+
+.chartBox canvas{
+  width:100% !important;
+  height:400px !important;
+}
 
 
 
