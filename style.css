@@ -96,6 +96,7 @@ body{
   color:#ffd24a;
 }
 
+// GRAFICI INDEX
 .chartsRow{
   display:flex;
   gap:30px;
@@ -121,6 +122,30 @@ body{
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.chartBox canvas{
+  width:100% !important;
+  height:100% !important;
+}
+
+//GRAFICI ADD
+.addLayout{
+  display:grid;
+  grid-template-columns:700px 1fr;
+  gap:40px;
+  align-items:start;
+}
+
+.tableBox{
+  width:100%;
+}
+
+.chartBox{
+  background:#3a3a3a;
+  padding:20px;
+  border-radius:8px;
+  height:400px;
 }
 
 .chartBox canvas{
