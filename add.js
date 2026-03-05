@@ -224,7 +224,7 @@ function saveTable(){
   rows.forEach(row=>{
 
     const type = row.querySelector(".type").value;
-    const topic = row.querySelector(".topic").value;
+const topic = row.querySelector(".topic").value || "Other";
     const amountRaw = row.querySelector(".amount").value;
     const dateRaw = row.querySelector(".date").value;
     const comment = row.querySelector(".comment").value;
@@ -343,6 +343,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
