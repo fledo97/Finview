@@ -86,11 +86,12 @@ function addRow(data=null){
   `;
 
   document.getElementById("expenseTable").appendChild(row);
+  updateMonthChart();
 }
 
 function deleteRow(btn){
   btn.closest("tr").remove();
-updateMonthChart();
+
 }
 
 // ================= IMPORT ROBUSTO =================
@@ -143,6 +144,7 @@ function pasteExpenses(){
   });
 
   textarea.value="";
+  updateMonthChart();
 }
 // ================= BARRA 12 MESI =================
 
@@ -202,7 +204,7 @@ function selectMonth(month){
       addRow(t);
     }
   });
-
+updateMonthChart();
 }
 // ================= SALVATAGGIO =================
 function saveTable(){
@@ -257,7 +259,9 @@ function saveTable(){
   });
 
   setTransactions(newTransactions);
-
+  
+  updateMonthChart();
+  
   alert("Mese salvato correttamente");
 }
 
@@ -335,4 +339,5 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
