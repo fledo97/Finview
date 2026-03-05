@@ -245,31 +245,33 @@ const ctxPie = document.getElementById("categoryChart");
 
 if(ctxPie && categoryLabels.length > 0){
 
-  new Chart(ctxPie,{
-    type:"pie",
-    data:{
-      labels:categoryLabels,
-      datasets:[{
-        data:categoryValues
-      }]
-    },
-    options:{
-      plugins:{
-        tooltip:{
-          callbacks:{
-            label:function(context){
+new Chart(ctxPie,{
+  type:"pie",
+  data:{
+    labels:categoryLabels,
+    datasets:[{
+      data:categoryValues
+    }]
+  },
+  options:{
+    responsive:true,
+    maintainAspectRatio:false,
+    plugins:{
+      tooltip:{
+        callbacks:{
+          label:function(context){
 
-              const total = categoryValues.reduce((a,b)=>a+b,0);
-              const value = context.raw;
-              const percent = ((value/total)*100).toFixed(1);
+            const total = categoryValues.reduce((a,b)=>a+b,0);
+            const value = context.raw;
+            const percent = ((value/total)*100).toFixed(1);
 
-              return `${context.label}: €${value} (${percent}%)`;
-            }
+            return `${context.label}: €${value} (${percent}%)`;
           }
         }
       }
     }
-  });
+  }
+});
 // MOSTRA DATA
 }
 function showCurrentDate(){
@@ -309,3 +311,4 @@ if("serviceWorker" in navigator){
 
 
 }
+
