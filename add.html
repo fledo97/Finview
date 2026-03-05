@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Gestione Movimenti</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Gestione Movimenti</h1>
+
+<div>
+<button class="mainBtn" onclick="goDashboard()">Dashboard</button>
+<button class="mainBtn" onclick="openSettings()">Settings</button>
+<button class="mainBtn" onclick="saveTransactions()">Salva</button>
+</div>
+
+<hr>
+
+<h3>Importa da estratto conto</h3>
+
+<textarea id="pasteArea" rows="5" cols="60"
+placeholder="34.50 2026-03-15 Amazon or 34.50 Amazon or 34.50"></textarea>
+<br>
+
+<button class="mainBtn" onclick="pasteExpenses()">Import</button>
+
+<hr>
+
+<h3></h3>
+<div id="monthButtons"></div>
+
+<hr>
+
+<button class="mainBtn" onclick="addRow()">add➕ </button>
+
+
+<table border="1">
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Topic</th>
+<th>Importo</th>
+<th>Data</th>
+<th>Commento</th>
+<th>🗑</th>
+</tr>
+</thead>
+<tbody id="expenseTable"></tbody>
+</table>
+
+<script src="add.js"></script>
+
+</body>
+</html>

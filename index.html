@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>Dashboard</h1>
+<div id="currentDate"></div>
+
+<div class="topbar">
+
+<button class="addBtn" onclick="openAddPage()">＋</button>
+
+<button class="settingsBtn" onclick="openSettings()">⚙ Settings</button>
+
+</div>
+
+<br>
+
+<div class="stats">
+
+<div class="card">
+<p>INCOME (mese corrente)</p>
+<h2 id="income">€ 0.00</h2>
+</div>
+
+<div class="card">
+<p>EXPENSES (mese corrente)</p>
+<h2 id="expenses">€ 0.00</h2>
+</div>
+
+<div class="card">
+<p>HIGHEST EXPENSE (mese corrente)</p>
+<h2 id="highest">€ 0.00</h2>
+</div>
+
+<div class="card">
+<p>AVERAGE MONTHLY EXPENSES</p>
+<h2 id="average">€ 0.00</h2>
+</div>
+
+</div>
+
+<br>
+
+<h2>MONTHLY REVIEW</h2>
+
+<canvas id="financeChart" height="120"></canvas>
+
+<!-- JS alla fine del body -->
+<script src="app.js"></script>
+
+</body>
+</html>

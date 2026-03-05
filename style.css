@@ -1,0 +1,98 @@
+body{
+  background-color:#2b2b2b;
+  color:#d4a017;
+  font-family: Arial, sans-serif;
+  margin:20px;
+}
+
+.activeMonth{
+  background:#d4a017;
+  color:black;
+  border:2px solid #d4a017;
+}
+
+#currentDate{
+  font-size:18px;
+  margin-bottom:15px;
+  color:#d4a017;
+  text-transform:capitalize;
+}
+
+.stats{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+}
+
+.card{
+  background:#3a3a3a;
+  border:1px solid #555;
+  border-radius:8px;
+  padding:15px;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.addBtn{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  font-size:22px;
+  background:#2ecc71;
+  color:white;
+  cursor:pointer;
+}
+
+.addBtn:hover{
+  background:#27ae60;
+}
+
+.settingsBtn{
+  padding:8px 14px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  background:#f4f4f4;
+  cursor:pointer;
+}
+
+.settingsBtn:hover{
+  background:#e6e6e6;
+}
+
+
+.mainBtn{
+  padding:8px 14px;
+  border-radius:6px;
+  border:1px solid #666;
+  background:#444;
+  color:#d4a017;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.mainBtn:hover{
+  background:#555;
+}
+
+.mainBtn{
+  padding:8px 14px;
+  border-radius:6px;
+  border:1px solid #666;
+  background:#444;
+  color:#d4a017;
+  cursor:pointer;
+  font-size:14px;
+}
+
+#monthButtons.activeMonth{
+  background:#6b5716;
+  border:1px solid #9c7f1d;
+  color:#ffd24a;
+}
+
