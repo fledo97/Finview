@@ -279,28 +279,26 @@ function updateMonthChart(){
   rows.forEach(row=>{
 
     const type = row.querySelector(".type").value;
-    const topic = row.querySelector(".topic").value;
+    const topic = row.querySelector(".topic").value || "Other";
     const amount = parseFloat(row.querySelector(".amount").value);
 
     if(!amount) return;
 
     if(type==="income"){
       totalIncome += amount;
-      return;
+    } else {
+      if(!topicTotals[topic]){
+        topicTotals[topic] = 0;
+      }
+      topicTotals[topic] += amount;
     }
-
-    if(!topicTotals[topic]){
-      topicTotals[topic] = 0;
-    }
-
-    topicTotals[topic] += amount;
 
   });
 
   const labels = ["Income", ...Object.keys(topicTotals)];
   const values = [totalIncome, ...Object.values(topicTotals)];
 
-  const colors = labels.map((l,i)=> i===0 ? "#2ecc71" : "#e74c3c");
+  const colors = labels.map((_,i)=> i===0 ? "#2ecc71" : "#e74c3c");
 
   if(window.monthChart){
     window.monthChart.destroy();
@@ -341,6 +339,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
