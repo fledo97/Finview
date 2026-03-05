@@ -95,16 +95,26 @@ body{
   border:1px solid #9c7f1d;
   color:#ffd24a;
 }
+
 .chartsRow{
   display:flex;
-  gap:40px;
-  align-items:flex-start;
+  gap:30px;
   margin-top:20px;
+  width:100%;
+  overflow:hidden;
 }
 
-.chartsRow canvas{
+.chartBox{
+  flex:1;
+  max-width:50%;
   background:#3a3a3a;
   padding:10px;
   border-radius:8px;
 }
+
+.chartBox canvas{
+  width:100% !important;
+  height:300px !important;
+}
+
 
