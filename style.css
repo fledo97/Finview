@@ -131,16 +131,27 @@ body{
 
 //GRAFICI ADD
 .addLayout{
-  display:grid;
-  grid-template-columns: 2fr 1fr;
-  gap:30px;
-  align-items:start;
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
   margin-top:20px;
 }
 
 .tableBox{
-  width:100%;
+  width:60%;
   overflow-x:auto;
+}
+
+.chartBox{
+  width:40%;
+  background:#3a3a3a;
+  padding:20px;
+  border-radius:8px;
+}
+
+.chartBox canvas{
+  width:100% !important;
+  height:400px !important;
 }
 
 .expenseTable{
@@ -154,55 +165,6 @@ body{
   padding:6px;
 }
 
-.chartBox{
-  background:#3a3a3a;
-  padding:20px;
-  border-radius:8px;
-  height:420px;
-}
-
-.chartBox canvas{
-  width:100% !important;
-  height:360px !important;
-}
-
-.addLayout{
-  display:grid;
-  grid-template-columns: 70% 30%;
-  gap:30px;
-}
-
-.tableBox{
-  width:100%;
-}
-
-.chartBox{
-  width:100%;
-}
-
-.chartBox canvas{
-  width:100% !important;
-  height:400px !important;
-}
-.addLayout{
-  display:flex;
-  gap:40px;
-  align-items:flex-start;
-  margin-top:20px;
-}
-
-.tableBox{
-  width:60%;
-}
-
-.chartBox{
-  width:40%;
-}
-
-.chartBox canvas{
-  width:100% !important;
-  height:400px !important;
-}
 
 
 
