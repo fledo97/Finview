@@ -305,7 +305,7 @@ const chartCanvas = document.getElementById("monthTopicChart");
     window.monthChart.destroy();
   }
 
-  window.monthChart = new Chart(ctx,{
+  window.monthChart = new Chart(chartCanvas,{
     type:"bar",
     data:{
       labels:labels,
@@ -340,6 +340,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
