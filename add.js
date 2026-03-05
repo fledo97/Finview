@@ -301,8 +301,6 @@ function updateMonthChart(){
 
   const colors = labels.map((l,i)=> i===0 ? "#2ecc71" : "#e74c3c");
 
-  const ctx = document.getElementById("monthTopicChart");
-
   if(window.monthChart){
     window.monthChart.destroy();
   }
@@ -342,6 +340,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
