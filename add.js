@@ -90,6 +90,7 @@ function addRow(data=null){
 
 function deleteRow(btn){
   btn.closest("tr").remove();
+updateMonthChart();
 }
 
 // ================= IMPORT ROBUSTO =================
@@ -334,3 +335,4 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
