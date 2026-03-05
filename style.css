@@ -111,7 +111,7 @@ body{
 }
 
 .chartCard canvas{
-  width:100%;
+  width:50%;
   height:420px !important;
 }
 //GRAFICI ADD
@@ -149,6 +149,7 @@ body{
   border:1px solid #555;
   padding:6px;
 }
+
 
 
 
