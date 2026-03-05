@@ -132,25 +132,25 @@ body{
 //GRAFICI ADD
 .addLayout{
   display:flex;
-  gap:40px;
+  gap:30px;
   align-items:flex-start;
 }
 
 .tableBox{
-  width:65%;
+  flex: 0 0 65%;
 }
 
 .chartBox{
-  width:35%;
+  flex: 1;
+  min-width: 320px;
   background:#3a3a3a;
-  padding:20px;
+  padding:16px;
   border-radius:8px;
-  height:420px;
 }
 
 .chartBox canvas{
   width:100% !important;
-  height:100% !important;
+  height:360px !important;
 }
 
 
