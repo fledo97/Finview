@@ -184,6 +184,25 @@ body{
   width:100% !important;
   height:400px !important;
 }
+.addLayout{
+  display:flex;
+  gap:40px;
+  align-items:flex-start;
+  margin-top:20px;
+}
+
+.tableBox{
+  width:60%;
+}
+
+.chartBox{
+  width:40%;
+}
+
+.chartBox canvas{
+  width:100% !important;
+  height:400px !important;
+}
 
 
 
