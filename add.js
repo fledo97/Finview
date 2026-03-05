@@ -267,6 +267,10 @@ function saveTable(){
 
 function updateMonthChart(){
 
+  const ctx = document.getElementById("monthTopicChart");
+
+  if(!ctx) return;
+
   const rows = document.querySelectorAll("#expenseTable tr");
 
   let topicTotals = {};
@@ -339,5 +343,6 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
