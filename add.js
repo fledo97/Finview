@@ -264,11 +264,12 @@ const topic = row.querySelector(".topic").value || "Other";
   alert("Mese salvato correttamente");
 }
 
+// UPDATE CHARTS
 function updateMonthChart(){
 
-const chartCanvas = document.getElementById("monthTopicChart");
+  const chartCanvas = document.getElementById("monthTopicChart");
 
-  if(!ctx || typeof Chart === "undefined") return;
+  if(!chartCanvas || typeof Chart === "undefined") return;
 
   const rows = document.querySelectorAll("#expenseTable tr");
 
@@ -340,6 +341,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
