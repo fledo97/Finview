@@ -268,7 +268,7 @@ function updateMonthChart(){
 
   const ctx = document.getElementById("monthTopicChart");
 
-  if(!ctx) return;
+  if(!ctx || typeof Chart === "undefined") return;
 
   const rows = document.querySelectorAll("#expenseTable tr");
 
@@ -342,6 +342,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
