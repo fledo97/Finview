@@ -103,8 +103,8 @@ function pasteExpenses(){
   const text = textarea.value.trim();
   if(!text) return;
 
-  const lines = text.split("\n");
-
+ const lines = text.split(/\r?\n/);
+  
   lines.forEach(line => {
 
     const clean = line.trim();
@@ -343,6 +343,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
