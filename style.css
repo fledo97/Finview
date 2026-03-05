@@ -132,25 +132,38 @@ body{
 //GRAFICI ADD
 .addLayout{
   display:grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 2fr 1fr;
   gap:30px;
   align-items:start;
+  margin-top:20px;
 }
 
 .tableBox{
   width:100%;
+  overflow-x:auto;
+}
+
+.expenseTable{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.expenseTable th,
+.expenseTable td{
+  border:1px solid #555;
+  padding:6px;
 }
 
 .chartBox{
-  width:100%;
   background:#3a3a3a;
-  padding:15px;
+  padding:20px;
   border-radius:8px;
+  height:420px;
 }
 
 .chartBox canvas{
   width:100% !important;
-  height:380px !important;
+  height:360px !important;
 }
 
 
