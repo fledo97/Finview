@@ -144,7 +144,6 @@ function pasteExpenses(){
   });
 
   textarea.value="";
-  updateMonthChart();
 }
 // ================= BARRA 12 MESI =================
 
@@ -343,6 +342,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
