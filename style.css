@@ -131,26 +131,27 @@ body{
 
 //GRAFICI ADD
 .addLayout{
-  display:grid;
-  grid-template-columns:700px 1fr;
+  display:flex;
   gap:40px;
-  align-items:start;
+  align-items:flex-start;
 }
 
 .tableBox{
-  width:100%;
+  width:65%;
 }
 
 .chartBox{
+  width:35%;
   background:#3a3a3a;
   padding:20px;
   border-radius:8px;
-  height:400px;
+  height:420px;
 }
 
 .chartBox canvas{
   width:100% !important;
   height:100% !important;
 }
+
 
 
