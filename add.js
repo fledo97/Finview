@@ -266,7 +266,7 @@ const topic = row.querySelector(".topic").value || "Other";
 
 function updateMonthChart(){
 
-  const ctx = document.getElementById("monthTopicChart");
+const chartCanvas = document.getElementById("monthTopicChart");
 
   if(!ctx || typeof Chart === "undefined") return;
 
@@ -340,6 +340,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
