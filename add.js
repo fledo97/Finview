@@ -86,7 +86,7 @@ function addRow(data=null){
   `;
 
   document.getElementById("expenseTable").appendChild(row);
-  updateMonthChart();
+  
 }
 
 function deleteRow(btn){
@@ -203,7 +203,7 @@ function selectMonth(month){
       addRow(t);
     }
   });
-updateMonthChart();
+
 }
 // ================= SALVATAGGIO =================
 function saveTable(){
@@ -259,7 +259,7 @@ const topic = row.querySelector(".topic").value || "Other";
 
   setTransactions(newTransactions);
   
-  updateMonthChart();
+  
   
   alert("Mese salvato correttamente");
 }
@@ -341,6 +341,7 @@ function openSettings(){
 // INIT
 
 loadMonthButtons();
+
 
 
 
